@@ -15,10 +15,10 @@ export function MobileActionBar({locale}: MobileActionBarProps) {
         <Link href={`/${locale}/menu`} className="rounded-xl px-3 py-2.5 text-center text-sm font-medium text-stone-700">
           {t('menu')}
         </Link>
-        <Link href={`/${locale}#reserve`} className="rounded-xl bg-stone-900 px-3 py-2.5 text-center text-sm font-medium text-stone-50">
+        <Link href={`/${locale}/visit#reservations`} className="rounded-xl bg-stone-900 px-3 py-2.5 text-center text-sm font-medium text-stone-50">
           {t('reserve')}
         </Link>
-        <Link href={`/${locale}#visit`} className="rounded-xl px-3 py-2.5 text-center text-sm font-medium text-stone-700">
+        <Link href={`/${locale}/visit`} className="rounded-xl px-3 py-2.5 text-center text-sm font-medium text-stone-700">
           {t('maps')}
         </Link>
       </div>
