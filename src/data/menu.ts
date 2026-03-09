@@ -3,6 +3,7 @@ import {AppLocale} from '@/i18n/routing';
 export type MenuItem = {name: string; description: string; price: string; note?: string};
 export type MenuCategory = {id: string; title: string; description?: string; items: MenuItem[]};
 export type MenuPageData = {
+  eyebrow: string;
   title: string;
   intro: string;
   serviceNote: string;
@@ -10,12 +11,13 @@ export type MenuPageData = {
   categories: MenuCategory[];
   seasonalNoteTitle: string;
   seasonalNote: string;
-  ctaMenuLabel: string;
+  ctaVisitLabel: string;
   ctaReserveLabel: string;
 };
 
 const menuByLocale: Record<AppLocale, MenuPageData> = {
   en: {
+    eyebrow: 'Casa Nube · Barcelona',
     title: 'Menu',
     intro: 'Specialty coffee, calm all-day brunch, and pastries baked fresh each morning in Eixample.',
     serviceNote: 'Served all day · Seasonal selection changes regularly · Walk-ins welcome',
@@ -50,10 +52,11 @@ const menuByLocale: Record<AppLocale, MenuPageData> = {
     ],
     seasonalNoteTitle: 'Kitchen note',
     seasonalNote: 'Brunch is served all day. Our pastry and seasonal drinks selection may vary slightly in the afternoon.',
-    ctaMenuLabel: 'Back to home',
+    ctaVisitLabel: 'Plan your visit',
     ctaReserveLabel: 'Reserve'
   },
   es: {
+    eyebrow: 'Casa Nube · Barcelona',
     title: 'Menú',
     intro: 'Café de especialidad, brunch tranquilo todo el día y pastelería recién horneada cada mañana en Eixample.',
     serviceNote: 'Servicio todo el día · Selección estacional cambiante · Se atiende sin reserva',
@@ -88,10 +91,11 @@ const menuByLocale: Record<AppLocale, MenuPageData> = {
     ],
     seasonalNoteTitle: 'Nota de cocina',
     seasonalNote: 'El brunch se sirve todo el día. La selección de pastelería y bebidas estacionales puede variar ligeramente por la tarde.',
-    ctaMenuLabel: 'Volver al inicio',
+    ctaVisitLabel: 'Planifica tu visita',
     ctaReserveLabel: 'Reservar'
   },
   ca: {
+    eyebrow: 'Casa Nube · Barcelona',
     title: 'Menú',
     intro: 'Cafè d’especialitat, brunch calmat tot el dia i pastisseria acabada de fornejar cada matí a l’Eixample.',
     serviceNote: 'Servei tot el dia · Selecció estacional variable · Atenció sense reserva',
@@ -126,7 +130,7 @@ const menuByLocale: Record<AppLocale, MenuPageData> = {
     ],
     seasonalNoteTitle: 'Nota de cuina',
     seasonalNote: 'El brunch se serveix tot el dia. La selecció de pastisseria i begudes estacionals pot variar lleugerament a la tarda.',
-    ctaMenuLabel: 'Tornar a l’inici',
+    ctaVisitLabel: 'Planifica la visita',
     ctaReserveLabel: 'Reservar'
   }
 };

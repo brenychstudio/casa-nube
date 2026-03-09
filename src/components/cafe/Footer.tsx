@@ -1,7 +1,9 @@
-import {useTranslations} from 'next-intl';
+import Link from 'next/link';
+import {useLocale, useTranslations} from 'next-intl';
 
 export function Footer() {
   const t = useTranslations('footer');
+  const locale = useLocale();
 
   return (
     <footer className="border-t border-stone-200/70 pt-8 pb-10 md:pt-9 md:pb-11">
@@ -11,9 +13,9 @@ export function Footer() {
           <p className="mt-1.5 text-[0.8rem] text-stone-600">Barcelona, Spain</p>
         </div>
         <div className="flex flex-wrap items-center gap-3.5 text-[0.8rem] font-medium text-stone-600">
-          <span>{t('instagram')}</span>
-          <span>{t('whatsapp')}</span>
-          <span>{t('maps')}</span>
+          <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="transition hover:text-stone-900">{t('instagram')}</Link>
+          <Link href="https://wa.me/34930000000" target="_blank" rel="noopener noreferrer" className="transition hover:text-stone-900">{t('whatsapp')}</Link>
+          <Link href={`/${locale}/visit`} className="transition hover:text-stone-900">{t('maps')}</Link>
         </div>
       </div>
     </footer>

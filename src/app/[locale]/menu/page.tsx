@@ -22,11 +22,11 @@ export default async function LocaleMenuPage({
   const menu = getMenuData(locale);
 
   return (
-    <main className="mx-auto w-full max-w-[78rem] space-y-10 px-4 pb-24 pt-5 md:space-y-12 md:px-8 md:pb-20 md:pt-9">
+    <main className="mx-auto w-full max-w-[78rem] space-y-11 px-4 pb-24 pt-5 md:space-y-[4.1rem] md:px-8 md:pb-20 md:pt-9 lg:space-y-[4.6rem]">
       <section className="overflow-hidden rounded-[1.6rem] border border-stone-200/70 bg-[color:var(--color-surface)] p-5 shadow-[0_24px_52px_-44px_rgba(58,45,30,0.48)] md:p-8">
         <div className="grid gap-6 md:grid-cols-[1.1fr_0.9fr] md:items-end md:gap-8">
           <div className="space-y-3.5 md:space-y-4">
-            <p className="text-[0.62rem] font-medium tracking-[0.19em] uppercase text-stone-500">Casa Nube · Barcelona</p>
+            <p className="text-[0.62rem] font-medium tracking-[0.19em] uppercase text-stone-500">{menu.eyebrow}</p>
             <h1 className="text-[2rem] leading-[1.08] font-semibold text-stone-900 md:text-[2.6rem]">{menu.title}</h1>
             <p className="max-w-2xl text-[0.95rem] leading-7 text-stone-600 md:text-[1rem] md:leading-8">{menu.intro}</p>
             <p className="rounded-2xl border border-stone-200/75 bg-white/75 px-4 py-2.5 text-[0.82rem] text-stone-700">{menu.serviceNote}</p>
@@ -43,7 +43,7 @@ export default async function LocaleMenuPage({
         </div>
       </section>
 
-      <section className="space-y-5">
+      <section className="space-y-5 border-y border-stone-200/75 py-8 md:py-10">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
           <p className="text-[0.66rem] tracking-[0.17em] uppercase text-stone-500">{menu.jumpLabel}</p>
           <nav className="flex flex-wrap gap-2.5 text-[0.81rem] text-stone-700">
@@ -85,8 +85,8 @@ export default async function LocaleMenuPage({
         <p className="text-[0.64rem] tracking-[0.16em] uppercase text-stone-500">{menu.seasonalNoteTitle}</p>
         <p className="mt-2 max-w-3xl text-[0.9rem] leading-7 text-stone-700">{menu.seasonalNote}</p>
         <div className="mt-4 flex flex-col gap-2.5 sm:flex-row">
-          <Link href={`/${locale}`} className="inline-flex justify-center rounded-full border border-stone-300 bg-white/75 px-5 py-2.5 text-sm font-medium text-stone-800 transition hover:border-stone-900">
-            {menu.ctaMenuLabel}
+          <Link href={`/${locale}/visit`} className="inline-flex justify-center rounded-full border border-stone-300 bg-white/75 px-5 py-2.5 text-sm font-medium text-stone-800 transition hover:border-stone-900">
+            {menu.ctaVisitLabel}
           </Link>
           <Link href={`/${locale}#reserve`} className="inline-flex justify-center rounded-full bg-stone-900 px-5 py-2.5 text-sm font-medium text-stone-50 transition hover:bg-stone-800">
             {menu.ctaReserveLabel}
