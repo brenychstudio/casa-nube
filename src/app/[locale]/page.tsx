@@ -20,7 +20,7 @@ export default async function LocaleHomePage({
   setRequestLocale(locale);
 
   return (
-    <main className="mx-auto w-full max-w-[78rem] space-y-14 px-5 pb-24 pt-7 md:space-y-[4.5rem] md:px-8 md:pb-16 md:pt-10">
+    <main className="mx-auto w-full max-w-[78rem] space-y-12 px-4 pb-24 pt-5 md:space-y-[4.25rem] md:px-8 md:pb-20 md:pt-9 lg:space-y-[4.75rem]">
       <Hero locale={locale} />
       <HomeSections />
       <Footer />
