@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Inici",
+    "menu": "Menú",
+    "visit": "Visita",
+    "reserve": "Reservar"
+  },
+  "hero": {
+    "eyebrow": "Cafè de dia a Barcelona",
+    "headline": "Cafè d’especialitat, plats càlids i un racó serè a la ciutat.",
+    "supporting": "Un concepte de cafè urbà premium definit per la llum natural, el disseny tranquil i el ritual quotidià.",
+    "ctaPrimary": "Veure menú",
+    "ctaSecondary": "Reservar"
+  },
+  "home": {
+    "todayTitle": "Avui a Casa Nube",
+    "todayCopy": "Selecció breu del dia pensada per al ritme urbà: cafè, pastisseria lleugera i plats càlids.",
+    "menuTitle": "Avanç de carta",
+    "menuCopy": "Estructura inicial per a esmorzars, brunch, cafè i begudes de temporada.",
+    "spaceTitle": "Espai & galeria",
+    "spaceCopy": "Bloc reservat per a imatge editorial del local i detalls dels materials.",
+    "storyTitle": "La nostra història",
+    "storyCopy": "Secció per a la narrativa de marca i la filosofia d’hospitalitat calmada.",
+    "visitTitle": "Visita & ubicació",
+    "visitCopy": "Horari, adreça, mapa i notes útils per arribar al cafè."
+  },
+  "mobileActions": {
+    "menu": "Menú",
+    "reserve": "Reservar",
+    "maps": "Mapa"
+  },
+  "footer": {
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp",
+    "maps": "Maps"
+  }
+}
