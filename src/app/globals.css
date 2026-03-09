@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --color-page: #f5f3ef;
-  --color-surface: #fdfcf9;
+  --color-page: #f4f1ec;
+  --color-surface: #fbf8f3;
+  --color-surface-alt: #f2ece2;
   --color-text: #1f1c19;
   --color-muted: #746e66;
 }
@@ -13,7 +14,7 @@
 
 body {
   margin: 0;
-  background: var(--color-page);
+  background: radial-gradient(circle at 15% -10%, #f7f3ed, transparent 45%), var(--color-page);
   color: var(--color-text);
   font-family: "Inter", "Avenir Next", "Segoe UI", sans-serif;
   line-height: 1.5;
