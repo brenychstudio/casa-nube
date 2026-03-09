@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import {useLocale, useTranslations} from 'next-intl';
 
@@ -18,6 +19,15 @@ export function HomeSections() {
             <div className="rounded-2xl border border-stone-200/80 bg-white/70 px-4 py-3">08:00 — 19:00</div>
             <div className="rounded-2xl border border-stone-200/80 bg-white/70 px-4 py-3">Brunch all day</div>
             <div className="rounded-2xl border border-stone-200/80 bg-white/70 px-4 py-3">Takeaway ready</div>
+          </div>
+          <div className="relative h-56 overflow-hidden rounded-[1.6rem] md:h-64">
+            <Image
+              src="/cafe/casa-nube-05-window-light.png"
+              alt="Morning light near Casa Nube window seating"
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </div>
         </div>
       </section>
@@ -43,9 +53,25 @@ export function HomeSections() {
             <p className="text-xs tracking-[0.14em] uppercase text-stone-500">Kitchen</p>
             <p className="mt-3 text-sm leading-relaxed text-stone-700">Warm plates, lighter brunch and a concise pastry selection.</p>
           </article>
-          <article className="col-span-2 rounded-[1.4rem] border border-stone-200/80 bg-[color:var(--color-surface-alt)] p-5">
-            <p className="text-xs tracking-[0.14em] uppercase text-stone-500">Seasonal note</p>
-            <p className="mt-3 text-sm leading-relaxed text-stone-700">Fresh citrus, almond cream and soft spice accents through the week.</p>
+          <article className="col-span-2 grid gap-3 rounded-[1.4rem] border border-stone-200/80 bg-[color:var(--color-surface-alt)] p-4 sm:grid-cols-[1.2fr_0.8fr] sm:gap-4 sm:p-5">
+            <div className="relative h-48 overflow-hidden rounded-[1rem] sm:h-auto sm:min-h-44">
+              <Image
+                src="/cafe/casa-nube-06-brunch.png"
+                alt="Brunch plate at Casa Nube"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, 45vw"
+              />
+            </div>
+            <div className="relative h-48 overflow-hidden rounded-[1rem] sm:h-auto sm:min-h-44">
+              <Image
+                src="/cafe/casa-nube-02-coffee-detail.png"
+                alt="Coffee and crema detail"
+                fill
+                className="object-cover"
+                sizes="(max-width: 640px) 100vw, 30vw"
+              />
+            </div>
           </article>
         </div>
       </section>
@@ -56,10 +82,36 @@ export function HomeSections() {
           <h2 className="text-3xl leading-tight font-semibold text-stone-900 md:text-4xl">{t('spaceTitle')}</h2>
           <p className="text-base leading-8 text-stone-600">{t('spaceCopy')}</p>
         </div>
-        <div className="grid gap-4 md:grid-cols-3">
-          <div className="h-48 rounded-[1.6rem] border border-stone-200/70 bg-[linear-gradient(160deg,#efe6da_0%,#f7f4ee_65%,#fdfaf5_100%)]" />
-          <div className="h-48 rounded-[1.6rem] border border-stone-200/70 bg-[linear-gradient(160deg,#f3ede3_0%,#faf6ef_100%)] md:translate-y-5" />
-          <div className="h-48 rounded-[1.6rem] border border-stone-200/70 bg-[linear-gradient(160deg,#ece4d8_0%,#f7f2e9_100%)]" />
+        <div className="grid gap-4 md:grid-cols-[1.2fr_0.8fr]">
+          <div className="relative h-72 overflow-hidden rounded-[1.7rem] md:h-[26rem]">
+            <Image
+              src="/cafe/casa-nube-04-terrace.png"
+              alt="Casa Nube terrace seating"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 60vw"
+            />
+          </div>
+          <div className="grid gap-4 md:pt-10">
+            <div className="relative h-48 overflow-hidden rounded-[1.5rem]">
+              <Image
+                src="/cafe/casa-nube-03-barista.png"
+                alt="Barista preparing coffee at Casa Nube"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 35vw"
+              />
+            </div>
+            <div className="relative h-44 overflow-hidden rounded-[1.5rem]">
+              <Image
+                src="/cafe/casa-nube-05-window-light.png"
+                alt="Soft window light in Casa Nube"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 35vw"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
