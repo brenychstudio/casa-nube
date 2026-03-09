@@ -22,7 +22,7 @@ export function Hero({locale}: HeroProps) {
           <p className="mt-5 max-w-[33rem] text-[0.95rem] leading-7 text-stone-600 md:mt-6 md:text-[0.99rem] lg:text-base">{t('supporting')}</p>
           <div className="mt-7 flex flex-col items-start gap-2.5 sm:flex-row sm:flex-wrap sm:items-center md:mt-8 md:gap-3">
             <Link
-              href={`/${locale}#menu`}
+              href={`/${locale}/menu`}
               className="inline-flex w-full items-center justify-center rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold tracking-[0.03em] text-stone-50 transition hover:bg-stone-800 sm:w-auto"
             >
               {t('ctaPrimary')}

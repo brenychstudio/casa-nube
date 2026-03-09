@@ -19,7 +19,7 @@ export function Header({locale}: HeaderProps) {
 
         <nav className="hidden items-center gap-7 text-[0.8rem] font-medium tracking-[0.03em] text-stone-600 md:flex">
           <Link href={`/${locale}`} className="transition hover:text-stone-900">{t('home')}</Link>
-          <Link href={`/${locale}#menu`} className="transition hover:text-stone-900">{t('menu')}</Link>
+          <Link href={`/${locale}/menu`} className="transition hover:text-stone-900">{t('menu')}</Link>
           <Link href={`/${locale}#visit`} className="transition hover:text-stone-900">{t('visit')}</Link>
         </nav>
 
