@@ -1,10 +1,8 @@
+import {rootMetadata} from '@/lib/metadata';
 import type {Metadata} from 'next';
 import './globals.css';
 
-export const metadata: Metadata = {
-  title: 'Casa Nube',
-  description: 'Premium Barcelona café demo with multilingual foundation.'
-};
+export const metadata: Metadata = rootMetadata;
 
 export default function RootLayout({
   children

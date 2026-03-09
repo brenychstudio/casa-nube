@@ -5,7 +5,18 @@ import {notFound} from 'next/navigation';
 import {setRequestLocale} from 'next-intl/server';
 import {Footer} from '@/components/cafe/Footer';
 import {getMenuData} from '@/data/menu';
-import {routing} from '@/i18n/routing';
+import {routing, AppLocale} from '@/i18n/routing';
+import {buildPageMetadata} from '@/lib/metadata';
+
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
+  return buildPageMetadata(locale as AppLocale, 'menu', '/menu');
+}
 
 export default async function LocaleMenuPage({
   params
@@ -33,7 +44,7 @@ export default async function LocaleMenuPage({
           </div>
           <div className="relative h-44 overflow-hidden rounded-[1.15rem] md:h-52">
             <Image
-              src="/cafe/casa-nube-05-window-light.png"
+              src="/cafe/casa-nube-05-window-light.svg"
               alt="Window table at Casa Nube"
               fill
               className="object-cover object-[50%_63%]"
