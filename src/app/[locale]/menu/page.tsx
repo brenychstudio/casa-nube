@@ -44,7 +44,7 @@ export default async function LocaleMenuPage({
           </div>
           <div className="relative h-44 overflow-hidden rounded-[1.15rem] md:h-52">
             <Image
-              src="/cafe/casa-nube-05-window-light.svg"
+              src="/cafe/casa-nube-05-window-light.png"
               alt="Window table at Casa Nube"
               fill
               className="object-cover object-[50%_63%]"
