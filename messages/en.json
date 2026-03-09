@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "visit": "Visit",
+    "reserve": "Reserve"
+  },
+  "hero": {
+    "eyebrow": "Barcelona all-day café",
+    "headline": "Specialty coffee, warm plates, and a calm corner in the city.",
+    "supporting": "A premium urban café concept shaped by natural light, quiet design, and everyday ritual.",
+    "ctaPrimary": "View Menu",
+    "ctaSecondary": "Reserve"
+  },
+  "home": {
+    "todayTitle": "Today at Casa Nube",
+    "todayCopy": "A concise daily selection for city rhythm: coffee, light pastry and warm plates.",
+    "menuTitle": "Menu preview",
+    "menuCopy": "Initial structure for breakfast, brunch, coffee and seasonal drinks.",
+    "spaceTitle": "Space & gallery",
+    "spaceCopy": "Reserved block for editorial interior imagery and material details.",
+    "storyTitle": "Our story",
+    "storyCopy": "Section for brand narrative and calm hospitality philosophy.",
+    "visitTitle": "Visit & location",
+    "visitCopy": "Hours, address, map and practical notes to find the café."
+  },
+  "mobileActions": {
+    "menu": "Menu",
+    "reserve": "Reserve",
+    "maps": "Maps"
+  },
+  "footer": {
+    "instagram": "Instagram",
+    "whatsapp": "WhatsApp",
+    "maps": "Maps"
+  }
+}
