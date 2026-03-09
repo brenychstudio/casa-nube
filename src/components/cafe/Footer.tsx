@@ -13,7 +13,7 @@ export function Footer() {
           <p className="mt-1.5 text-[0.8rem] text-stone-600">Barcelona, Spain</p>
         </div>
         <div className="flex flex-wrap items-center gap-3.5 text-[0.8rem] font-medium text-stone-600">
-          <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="transition hover:text-stone-900">{t('instagram')}</Link>
+          <Link href="https://instagram.com/casanube.barcelona" target="_blank" rel="noopener noreferrer" className="transition hover:text-stone-900">{t('instagram')}</Link>
           <Link href="https://wa.me/34930000000" target="_blank" rel="noopener noreferrer" className="transition hover:text-stone-900">{t('whatsapp')}</Link>
           <Link href={`/${locale}/visit`} className="transition hover:text-stone-900">{t('maps')}</Link>
         </div>

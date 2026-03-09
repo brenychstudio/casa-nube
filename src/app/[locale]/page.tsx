@@ -4,7 +4,18 @@ import {Footer} from '@/components/cafe/Footer';
 import {hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {setRequestLocale} from 'next-intl/server';
-import {routing} from '@/i18n/routing';
+import {routing, AppLocale} from '@/i18n/routing';
+import {buildPageMetadata} from '@/lib/metadata';
+
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
+  return buildPageMetadata(locale as AppLocale, 'home', '');
+}
 
 export default async function LocaleHomePage({
   params
