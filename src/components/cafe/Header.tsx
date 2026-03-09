@@ -20,13 +20,13 @@ export function Header({locale}: HeaderProps) {
         <nav className="hidden items-center gap-7 text-[0.8rem] font-medium tracking-[0.03em] text-stone-600 md:flex">
           <Link href={`/${locale}`} className="transition hover:text-stone-900">{t('home')}</Link>
           <Link href={`/${locale}/menu`} className="transition hover:text-stone-900">{t('menu')}</Link>
-          <Link href={`/${locale}#visit`} className="transition hover:text-stone-900">{t('visit')}</Link>
+          <Link href={`/${locale}/visit`} className="transition hover:text-stone-900">{t('visit')}</Link>
         </nav>
 
         <div className="flex items-center gap-2 md:gap-2.5">
           <LocaleSwitcher currentLocale={locale} />
           <Link
-            href={`/${locale}#reserve`}
+            href={`/${locale}/visit#reservations`}
             className="hidden rounded-full bg-stone-900 px-4 py-2 text-[0.75rem] font-semibold tracking-[0.045em] text-stone-50 transition hover:bg-stone-800 sm:inline-flex"
           >
             {t('reserve')}
