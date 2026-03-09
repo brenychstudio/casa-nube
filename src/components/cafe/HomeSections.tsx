@@ -29,7 +29,7 @@ export function HomeSections() {
             </div>
             <div className="relative h-40 overflow-hidden rounded-[1.1rem] sm:h-[8.5rem] md:h-36">
               <Image
-                src="/cafe/casa-nube-05-window-light.svg"
+                src="/cafe/casa-nube-05-window-light.png"
                 alt="Morning light near Casa Nube window seating"
                 fill
                 className="object-cover object-[50%_66%]"
@@ -74,7 +74,7 @@ export function HomeSections() {
           <article className="col-span-2 grid gap-3 rounded-[1.3rem] border border-stone-200/75 bg-[color:var(--color-surface-alt)] p-3.5 sm:grid-cols-[1.18fr_0.82fr] sm:gap-3.5 sm:p-[1.125rem]">
             <div className="relative h-44 overflow-hidden rounded-[1rem] sm:h-auto sm:min-h-40 md:min-h-44">
               <Image
-                src="/cafe/casa-nube-06-brunch.svg"
+                src="/cafe/casa-nube-06-brunch.png"
                 alt="Brunch plate at Casa Nube"
                 fill
                 className="object-cover object-[50%_62%]"
@@ -86,7 +86,7 @@ export function HomeSections() {
               <p className="text-[0.88rem] leading-7 text-stone-700">{t('menuKitchenNote')}</p>
               <div className="relative h-24 overflow-hidden rounded-[0.9rem]">
                 <Image
-                  src="/cafe/casa-nube-02-coffee-detail.svg"
+                  src="/cafe/casa-nube-02-coffee-detail.png"
                   alt="Coffee and crema detail"
                   fill
                   className="object-cover object-[50%_35%]"
@@ -108,7 +108,7 @@ export function HomeSections() {
           <div className="space-y-3">
             <div className="relative h-64 overflow-hidden rounded-[1.5rem] sm:h-72 md:h-[23.5rem] md:rounded-[1.7rem]">
               <Image
-                src="/cafe/casa-nube-04-terrace.svg"
+                src="/cafe/casa-nube-04-terrace.png"
                 alt="Casa Nube terrace seating"
                 fill
                 className="object-cover object-[50%_58%]"
@@ -121,7 +121,7 @@ export function HomeSections() {
             <div>
               <div className="relative h-44 overflow-hidden rounded-[1.35rem] md:h-48 md:rounded-[1.5rem]">
                 <Image
-                  src="/cafe/casa-nube-03-barista.svg"
+                  src="/cafe/casa-nube-03-barista.png"
                   alt="Barista preparing coffee at Casa Nube"
                   fill
                   className="object-cover object-[54%_44%]"
@@ -133,7 +133,7 @@ export function HomeSections() {
             <div>
               <div className="relative h-40 overflow-hidden rounded-[1.35rem] md:h-44 md:rounded-[1.5rem]">
                 <Image
-                  src="/cafe/casa-nube-05-window-light.svg"
+                  src="/cafe/casa-nube-05-window-light.png"
                   alt="Soft window light in Casa Nube"
                   fill
                   className="object-cover object-[50%_67%]"

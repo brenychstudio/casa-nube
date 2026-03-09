@@ -39,7 +39,7 @@ export function Hero({locale}: HeroProps) {
         <div className="relative">
           <div className="relative min-h-[16.75rem] overflow-hidden rounded-[1.3rem] sm:min-h-[19.75rem] md:min-h-[22.5rem] md:rounded-[1.7rem] lg:min-h-[24rem]">
             <Image
-              src="/cafe/casa-nube-01-hero-interior.svg"
+              src="/cafe/casa-nube-01-hero-interior.png"
               alt="Casa Nube interior with soft natural light"
               fill
               className="object-cover object-[59%_center] sm:object-[57%_center] md:object-[58%_center]"
@@ -49,7 +49,7 @@ export function Hero({locale}: HeroProps) {
           </div>
           <div className="absolute -bottom-3.5 left-3.5 w-32 overflow-hidden rounded-[1rem] border border-white/80 shadow-[0_18px_30px_-24px_rgba(20,14,8,0.75)] sm:w-40 md:-bottom-6 md:left-7 md:w-48 lg:w-52">
             <Image
-              src="/cafe/casa-nube-02-coffee-detail.svg"
+              src="/cafe/casa-nube-02-coffee-detail.png"
               alt="Coffee detail at Casa Nube"
               width={320}
               height={380}
