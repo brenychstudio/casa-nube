@@ -31,7 +31,7 @@ type VisitPageData = {
 
 const visitByLocale: Record<AppLocale, VisitPageData> = {
   en: {
-    eyebrow: 'Visit Casa Nube',
+    eyebrow: 'Casa Nube · Barcelona',
     title: 'Calm, central, and easy to drop into.',
     intro: 'An all-day café in Eixample for coffee, brunch, and quiet meetings between city plans.',
     practicalNote: 'Walk-ins are welcome all day. Reservations are available for brunch tables of 5+.',
@@ -60,7 +60,7 @@ const visitByLocale: Record<AppLocale, VisitPageData> = {
     actionsTitle: 'Plan your visit',
     actions: [
       {label: 'Reserve a table', href: 'https://wa.me/34930000000?text=Hello%20Casa%20Nube%2C%20I%20would%20like%20to%20reserve%20a%20table.', primary: true},
-      {label: 'Open in Maps', href: 'https://maps.google.com/?q=Carrer+de+la+Diputaci%C3%B3+215+Barcelona'},
+      {label: 'Directions', href: 'https://maps.google.com/?q=Carrer+de+la+Diputaci%C3%B3+215+Barcelona'},
       {label: 'WhatsApp', href: 'https://wa.me/34930000000'},
       {label: 'Instagram', href: 'https://instagram.com'}
     ],
@@ -73,7 +73,7 @@ const visitByLocale: Record<AppLocale, VisitPageData> = {
     ]
   },
   es: {
-    eyebrow: 'Visita Casa Nube',
+    eyebrow: 'Casa Nube · Barcelona',
     title: 'Calmado, céntrico y fácil de visitar.',
     intro: 'Un café de todo el día en Eixample para café, brunch y reuniones tranquilas entre planes de ciudad.',
     practicalNote: 'Atendemos sin reserva todo el día. Las reservas están disponibles para brunch en mesas de 5+ personas.',
@@ -102,7 +102,7 @@ const visitByLocale: Record<AppLocale, VisitPageData> = {
     actionsTitle: 'Planifica tu visita',
     actions: [
       {label: 'Reservar mesa', href: 'https://wa.me/34930000000?text=Hola%20Casa%20Nube%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa.', primary: true},
-      {label: 'Abrir en Maps', href: 'https://maps.google.com/?q=Carrer+de+la+Diputaci%C3%B3+215+Barcelona'},
+      {label: 'Cómo llegar', href: 'https://maps.google.com/?q=Carrer+de+la+Diputaci%C3%B3+215+Barcelona'},
       {label: 'WhatsApp', href: 'https://wa.me/34930000000'},
       {label: 'Instagram', href: 'https://instagram.com'}
     ],
@@ -115,7 +115,7 @@ const visitByLocale: Record<AppLocale, VisitPageData> = {
     ]
   },
   ca: {
-    eyebrow: 'Visita Casa Nube',
+    eyebrow: 'Casa Nube · Barcelona',
     title: 'Calmat, cèntric i fàcil de visitar.',
     intro: 'Un cafè de tot el dia a l’Eixample per a cafè, brunch i reunions tranquil·les entre plans de ciutat.',
     practicalNote: 'Atenem sense reserva durant tot el dia. Les reserves estan disponibles per a brunch en taules de 5+ persones.',
@@ -144,7 +144,7 @@ const visitByLocale: Record<AppLocale, VisitPageData> = {
     actionsTitle: 'Planifica la visita',
     actions: [
       {label: 'Reservar taula', href: 'https://wa.me/34930000000?text=Hola%20Casa%20Nube%2C%20m%27agradaria%20reservar%20una%20taula.', primary: true},
-      {label: 'Obrir a Maps', href: 'https://maps.google.com/?q=Carrer+de+la+Diputaci%C3%B3+215+Barcelona'},
+      {label: 'Com arribar', href: 'https://maps.google.com/?q=Carrer+de+la+Diputaci%C3%B3+215+Barcelona'},
       {label: 'WhatsApp', href: 'https://wa.me/34930000000'},
       {label: 'Instagram', href: 'https://instagram.com'}
     ],

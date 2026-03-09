@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import {hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
@@ -21,14 +22,25 @@ export default async function LocaleVisitPage({
   const visit = getVisitData(locale);
 
   return (
-    <main className="mx-auto w-full max-w-[78rem] space-y-10 px-4 pb-24 pt-5 md:space-y-12 md:px-8 md:pb-20 md:pt-9">
-      <section className="space-y-6 rounded-[1.6rem] border border-stone-200/75 bg-[color:var(--color-surface)] p-5 shadow-[0_24px_52px_-44px_rgba(58,45,30,0.48)] md:p-8">
-        <div className="max-w-3xl space-y-3.5">
-          <p className="text-[0.62rem] font-medium tracking-[0.19em] uppercase text-stone-500">{visit.eyebrow}</p>
-          <h1 className="text-[2rem] leading-[1.08] font-semibold text-stone-900 md:text-[2.6rem]">{visit.title}</h1>
-          <p className="text-[0.95rem] leading-7 text-stone-600 md:text-[1rem] md:leading-8">{visit.intro}</p>
+    <main className="mx-auto w-full max-w-[78rem] space-y-11 px-4 pb-24 pt-5 md:space-y-[4.1rem] md:px-8 md:pb-20 md:pt-9 lg:space-y-[4.6rem]">
+      <section className="overflow-hidden rounded-[1.6rem] border border-stone-200/75 bg-[color:var(--color-surface)] p-5 shadow-[0_24px_52px_-44px_rgba(58,45,30,0.48)] md:p-8">
+        <div className="grid gap-6 md:grid-cols-[1.1fr_0.9fr] md:items-end md:gap-8">
+          <div className="space-y-3.5 md:space-y-4">
+            <p className="text-[0.62rem] font-medium tracking-[0.19em] uppercase text-stone-500">{visit.eyebrow}</p>
+            <h1 className="text-[2rem] leading-[1.08] font-semibold text-stone-900 md:text-[2.6rem]">{visit.title}</h1>
+            <p className="max-w-2xl text-[0.95rem] leading-7 text-stone-600 md:text-[1rem] md:leading-8">{visit.intro}</p>
+            <p className="rounded-2xl border border-stone-200/75 bg-white/75 px-4 py-2.5 text-[0.82rem] text-stone-700">{visit.practicalNote}</p>
+          </div>
+          <div className="relative h-44 overflow-hidden rounded-[1.15rem] md:h-52">
+            <Image
+              src="/cafe/casa-nube-04-terrace.png"
+              alt="Terrace tables at Casa Nube"
+              fill
+              className="object-cover object-[50%_58%]"
+              sizes="(max-width: 768px) 100vw, 36vw"
+            />
+          </div>
         </div>
-        <p className="rounded-2xl border border-stone-200/75 bg-white/75 px-4 py-2.5 text-[0.82rem] text-stone-700">{visit.practicalNote}</p>
       </section>
 
       <section className="grid gap-4 rounded-[1.3rem] border border-stone-200/75 bg-white/65 p-5 md:grid-cols-[0.8fr_1.2fr] md:items-start md:gap-6 md:p-6">
