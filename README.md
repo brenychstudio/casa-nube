@@ -80,3 +80,44 @@ Framework preset: None
 Build command: npm run build
 Build output directory: out
 Node version: 22
+
+Visual direction
+
+Casa Nube uses a restrained premium hospitality visual system:
+
+off-white and limestone backgrounds;
+warm gray and taupe UI surfaces;
+soft espresso accents;
+editorial café photography;
+large clean typography;
+rounded cards and subtle shadows;
+calm page rhythm;
+minimal but practical navigation.
+
+The design avoids generic café templates, loud gradients, heavy effects, and PDF-first menu UX.
+
+UX focus
+
+The main UX goal is to make the site useful for real café discovery flows:
+
+quick menu access;
+clear visit information;
+language switching;
+map handoff;
+reservation/contact actions;
+mobile sticky actions;
+readable content on tablet and phone.
+Project status
+
+Status: Done
+Readiness: 100%
+Deployment: Cloudflare Pages
+Demo: https://casa-nube.pages.dev
+
+Credits
+
+Concept, design direction, front-end implementation, responsive QA, and deployment by brenychstudio.
+
+Website: https://www.brenychstudio.com
+
+GitHub: https://github.com/brenychstudio
