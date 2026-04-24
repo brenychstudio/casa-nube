@@ -126,8 +126,8 @@ img {
 
   .cn-footer {
     position: relative;
-    margin-top: clamp(2.25rem, 5vw, 4rem) !important;
-    padding-block: clamp(2.35rem, 4vw, 3.4rem);
+    margin-top: clamp(1.9rem, 4vw, 3.4rem) !important;
+    padding-block: clamp(2rem, 3.5vw, 3.1rem);
     border-top: 1px solid rgba(42, 34, 25, 0.1);
   }
 
@@ -145,6 +145,18 @@ img {
       rgba(44, 35, 26, 0.24),
       transparent
     );
+  }
+
+  @media (max-width: 767px) {
+    .cn-footer {
+      margin-top: 2rem !important;
+      padding-top: 2rem;
+      padding-bottom: 1.25rem;
+    }
+
+    .cn-footer nav {
+      gap: 1.05rem;
+    }
   }
 
   .cn-footer-link {
@@ -284,40 +296,6 @@ img {
 
   .cn-link-motion:hover::after {
     transform: scaleX(1);
-  }
-
-  .cn-whatsapp-icon {
-    position: relative;
-    display: inline-grid;
-    width: 1.05rem;
-    height: 1.05rem;
-    place-items: center;
-    border-radius: 999px;
-    border: 1px solid currentColor;
-    opacity: 0.76;
-  }
-
-  .cn-whatsapp-icon::before {
-    content: "";
-    width: 0.38rem;
-    height: 0.38rem;
-    border-radius: 999px;
-    border: 1px solid currentColor;
-    border-top-color: transparent;
-    transform: rotate(-24deg);
-  }
-
-  .cn-whatsapp-icon::after {
-    content: "";
-    position: absolute;
-    right: 0.08rem;
-    bottom: 0.08rem;
-    width: 0.24rem;
-    height: 0.24rem;
-    border-right: 1px solid currentColor;
-    border-bottom: 1px solid currentColor;
-    transform: rotate(18deg);
-    background: inherit;
   }
 
   .cn-locale-pill {

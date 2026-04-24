@@ -27,7 +27,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <div className="min-h-screen bg-[color:var(--color-page)] pb-24 md:pb-0">
+      <div className="min-h-screen bg-[color:var(--color-page)]">
         <Header locale={locale} />
         {children}
         <MobileActionBar locale={locale} />

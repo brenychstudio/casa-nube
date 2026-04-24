@@ -119,14 +119,7 @@ export default async function LocaleVisitPage({
                 target={action.href.startsWith('http') ? '_blank' : undefined}
                 rel={action.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               >
-                {action.label.toLowerCase().includes('whatsapp') ? (
-                  <>
-                    <span className="cn-whatsapp-icon" aria-hidden="true" />
-                    <span>{action.label}</span>
-                  </>
-                ) : (
-                  action.label
-                )}
+                {action.label}
               </Link>
             ))}
           </div>

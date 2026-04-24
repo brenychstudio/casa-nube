@@ -29,7 +29,7 @@ export function HomeSections() {
                 <p className="text-[0.65rem] tracking-[0.15em] uppercase text-stone-500">{t('todaySeasonalLabel')}</p>
                 <p className="text-[0.88rem] leading-7 text-stone-700">{t('todaySeasonalNote')}</p>
               </div>
-              <div className="relative h-40 overflow-hidden rounded-[1.1rem] sm:h-[8.5rem] md:h-36">
+              <div className="relative h-44 overflow-hidden rounded-[1.1rem] sm:h-[10.5rem] md:h-44 lg:h-44">
                 <Image
                   src="/cafe/casa-nube-05-window-light.png"
                   alt="Morning light near Casa Nube window seating"
