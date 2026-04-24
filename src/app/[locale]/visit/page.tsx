@@ -115,15 +115,18 @@ export default async function LocaleVisitPage({
               <Link
                 key={action.label}
                 href={action.href}
-                className={`rounded-full px-5 py-2.5 text-center font-medium transition ${
-                  action.primary
-                    ? 'border border-stone-900 bg-stone-900 text-stone-50 hover:bg-stone-800'
-                    : 'border border-stone-300 bg-white text-stone-800 hover:border-stone-900'
-                }`}
+                className={`cn-button w-full ${action.primary ? 'cn-button-primary' : 'cn-button-secondary'}`}
                 target={action.href.startsWith('http') ? '_blank' : undefined}
                 rel={action.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               >
-                {action.label}
+                {action.label.toLowerCase().includes('whatsapp') ? (
+                  <>
+                    <span className="cn-whatsapp-icon" aria-hidden="true" />
+                    <span>{action.label}</span>
+                  </>
+                ) : (
+                  action.label
+                )}
               </Link>
             ))}
           </div>

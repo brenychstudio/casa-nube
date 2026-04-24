@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {useTranslations} from 'next-intl';
 import {AppLocale} from '@/i18n/routing';
+import {Reveal} from '@/components/motion/Reveal';
 
 type HeroProps = {
   locale: AppLocale;
@@ -14,7 +15,7 @@ export function Hero({locale}: HeroProps) {
     <section className="relative overflow-hidden rounded-[1.75rem] border border-stone-200/70 bg-[color:var(--color-surface)] px-5 py-6 shadow-[0_24px_52px_-44px_rgba(58,45,30,0.48)] md:rounded-[2rem] md:px-9 md:py-10 lg:px-12 lg:py-12">
       <div className="pointer-events-none absolute inset-y-0 right-0 w-2/5 bg-gradient-to-l from-amber-50/35 to-transparent" />
       <div className="relative grid gap-8 md:gap-9 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-12">
-        <div className="max-w-xl lg:max-w-2xl">
+        <Reveal variant="up" className="max-w-xl lg:max-w-2xl">
           <p className="text-[0.64rem] font-medium tracking-[0.2em] uppercase text-stone-500">{t('eyebrow')}</p>
           <h1 className="mt-3.5 max-w-[16ch] text-[2rem] leading-[1.08] font-semibold text-stone-900 sm:text-[2.35rem] md:mt-4 md:text-[2.8rem] lg:text-[3.25rem] lg:leading-[1.02]">
             {t('headline')}
@@ -23,20 +24,20 @@ export function Hero({locale}: HeroProps) {
           <div className="mt-7 flex flex-col items-start gap-2.5 sm:flex-row sm:flex-wrap sm:items-center md:mt-8 md:gap-3">
             <Link
               href={`/${locale}/menu`}
-              className="inline-flex w-full items-center justify-center rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold tracking-[0.03em] text-stone-50 transition hover:bg-stone-800 sm:w-auto"
+              className="cn-button cn-button-primary cn-interactive-lift w-full sm:w-auto"
             >
               {t('ctaPrimary')}
             </Link>
             <Link
               href={`/${locale}#reserve`}
-              className="inline-flex w-full items-center justify-center rounded-full border border-stone-300/90 bg-white/65 px-6 py-3 text-sm font-medium text-stone-700 transition hover:border-stone-900 hover:text-stone-900 sm:w-auto"
+              className="cn-button cn-button-secondary cn-interactive-lift w-full sm:w-auto"
             >
               {t('ctaSecondary')}
             </Link>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="relative">
+        <Reveal variant="soft" delay={120} className="relative">
           <div className="relative min-h-[16.75rem] overflow-hidden rounded-[1.3rem] sm:min-h-[19.75rem] md:min-h-[22.5rem] md:rounded-[1.7rem] lg:min-h-[24rem]">
             <Image
               src="/cafe/casa-nube-01-hero-interior.png"
@@ -57,7 +58,7 @@ export function Hero({locale}: HeroProps) {
               sizes="(max-width: 640px) 8rem, (max-width: 768px) 10rem, 13rem"
             />
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

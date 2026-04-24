@@ -96,10 +96,10 @@ export default async function LocaleMenuPage({
         <p className="text-[0.64rem] tracking-[0.16em] uppercase text-stone-500">{menu.seasonalNoteTitle}</p>
         <p className="mt-2 max-w-3xl text-[0.9rem] leading-7 text-stone-700">{menu.seasonalNote}</p>
         <div className="mt-4 flex flex-col gap-2.5 sm:flex-row">
-          <Link href={`/${locale}/visit`} className="inline-flex justify-center rounded-full border border-stone-300 bg-white/75 px-5 py-2.5 text-sm font-medium text-stone-800 transition hover:border-stone-900">
+          <Link href={`/${locale}/visit`} className="cn-button cn-button-secondary cn-interactive-lift w-full sm:w-auto">
             {menu.ctaVisitLabel}
           </Link>
-          <Link href={`/${locale}#reserve`} className="inline-flex justify-center rounded-full bg-stone-900 px-5 py-2.5 text-sm font-medium text-stone-50 transition hover:bg-stone-800">
+          <Link href={`/${locale}#reserve`} className="cn-button cn-button-primary cn-interactive-lift w-full sm:w-auto">
             {menu.ctaReserveLabel}
           </Link>
         </div>

@@ -10,15 +10,24 @@ export function MobileActionBar({locale}: MobileActionBarProps) {
   const t = useTranslations('mobileActions');
 
   return (
-    <div className="fixed right-0 bottom-0 left-0 z-30 border-t border-stone-200/75 bg-[color:var(--color-page)]/95 px-3.5 pb-[calc(0.7rem+env(safe-area-inset-bottom))] pt-2.5 backdrop-blur-md md:hidden">
-      <div className="mx-auto grid max-w-6xl grid-cols-3 gap-2 rounded-2xl border border-stone-200/75 bg-white/80 p-2">
-        <Link href={`/${locale}/menu`} className="rounded-xl px-3 py-2.5 text-center text-sm font-medium text-stone-700">
+    <div className="fixed inset-x-3 bottom-3 z-30 pb-[env(safe-area-inset-bottom)] md:hidden">
+      <div className="mx-auto grid max-w-md grid-cols-3 gap-1.5 rounded-[1.45rem] border border-stone-950/10 bg-[#fffaf2]/88 p-1.5 shadow-[0_18px_45px_rgba(31,27,23,0.16)] backdrop-blur-xl">
+        <Link
+          href={`/${locale}/menu`}
+          className="cn-button cn-button-quiet cn-interactive-lift min-h-11 px-3 text-[0.82rem]"
+        >
           {t('menu')}
         </Link>
-        <Link href={`/${locale}/visit#reservations`} className="rounded-xl bg-stone-900 px-3 py-2.5 text-center text-sm font-medium text-stone-50">
+        <Link
+          href={`/${locale}/visit#reservations`}
+          className="cn-button cn-button-primary cn-interactive-lift min-h-11 px-3 text-[0.82rem]"
+        >
           {t('reserve')}
         </Link>
-        <Link href={`/${locale}/visit`} className="rounded-xl px-3 py-2.5 text-center text-sm font-medium text-stone-700">
+        <Link
+          href={`/${locale}/visit`}
+          className="cn-button cn-button-quiet cn-interactive-lift min-h-11 px-3 text-[0.82rem]"
+        >
           {t('maps')}
         </Link>
       </div>

@@ -21,10 +21,10 @@ export function LocaleSwitcher({currentLocale}: LocaleSwitcherProps) {
         <Link
           key={locale}
           href={`/${locale}${localizedPath === '/' ? '' : localizedPath}`}
-          className={`rounded-full px-2.5 py-1 transition ${
+          className={`cn-locale-pill ${
             locale === currentLocale
-              ? 'bg-stone-900 text-stone-50 shadow-[0_6px_16px_-14px_rgba(28,20,11,0.95)]'
-              : 'hover:bg-stone-200/75 hover:text-stone-700'
+              ? 'cn-locale-pill-active'
+              : 'cn-locale-pill-idle'
           }`}
         >
           {locale}
