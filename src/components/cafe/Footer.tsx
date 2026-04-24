@@ -46,6 +46,22 @@ export function Footer() {
           </Link>
         </nav>
       </Reveal>
+
+      <div className="mt-7 flex flex-col gap-2 border-t border-stone-950/[0.06] pt-5 text-[0.72rem] leading-5 text-stone-400 md:mt-8 md:flex-row md:items-center md:justify-between">
+        <p>© {new Date().getFullYear()} Casa Nube</p>
+
+        <p>
+          Design &amp; development —{' '}
+          <Link
+            href="https://brenychstudio.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cn-footer-link cn-link-motion font-medium text-stone-500"
+          >
+            brenychstudio
+          </Link>
+        </p>
+      </div>
     </footer>
   );
 }
