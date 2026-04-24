@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Casa Nube
 
-## Getting Started
+Premium multilingual café website concept for Barcelona.
 
-First, run the development server:
+Casa Nube is a polished hospitality website demo for a modern all-day café in Barcelona. It combines editorial atmosphere, mobile-first utility, multilingual navigation, web-native menu structure, visit planning, and refined responsive design.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Live demo: https://casa-nube.pages.dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Casa Nube was designed as more than a simple café landing page. The goal was to create a premium digital café identity: a website that works as a digital front door for people arriving from search, maps, Instagram, QR codes, or direct recommendations.
 
-## Learn More
+The project focuses on:
 
-To learn more about Next.js, take a look at the following resources:
+- editorial visual direction;
+- fast access to menu, visit, and reservation actions;
+- Spanish, English, and Catalan localization;
+- mobile-first usability;
+- refined photography-led layout;
+- subtle motion and micro-interactions;
+- static deployment through Cloudflare Pages.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project type
 
-## Deploy on Vercel
+Premium hospitality website / café vertical demo.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is part of a broader reusable vertical direction for modern cafés, brunch places, bakeries, and small restaurant concepts that need a stronger digital presence.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Features
+
+- Premium editorial homepage
+- Multilingual routing: Spanish, English, Catalan
+- Web-native menu page
+- Dedicated visit page with location, hours, practical notes, and action links
+- Sticky mobile action bar
+- Responsive design for desktop, tablet, and mobile
+- Soft page transitions and scroll reveal motion
+- Local photography assets
+- Custom Open Graph image
+- Static export deployment on Cloudflare Pages
+
+---
+
+## Pages
+
+- `/es/` — Spanish homepage
+- `/en/` — English homepage
+- `/ca/` — Catalan homepage
+- `/es/menu/`, `/en/menu/`, `/ca/menu/` — localized menu pages
+- `/es/visit/`, `/en/visit/`, `/ca/visit/` — localized visit pages
+
+---
+
+## Tech stack
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- next-intl
+- React
+- Cloudflare Pages
+- Static export
+
+---
+
+## Deployment
+
+The site is configured for static export and deployed on Cloudflare Pages.
+
+Cloudflare Pages settings:
+
+```txt
+Framework preset: None
+Build command: npm run build
+Build output directory: out
+Node version: 22
