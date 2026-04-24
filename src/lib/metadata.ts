@@ -1,9 +1,9 @@
 import type {Metadata} from 'next';
 import {AppLocale, routing} from '@/i18n/routing';
 
-const siteUrl = 'https://casa-nube-demo.vercel.app';
+const siteUrl = 'https://casa-nube.pages.dev';
 const brand = 'Casa Nube';
-const defaultOgImage = '/og/casa-nube-share.svg';
+const defaultOgImage = '/og/casa-nube-og.png';
 
 const localeConfig: Record<AppLocale, {label: string; ogLocale: string}> = {
   es: {label: 'es-ES', ogLocale: 'es_ES'},
